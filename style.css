@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: "Kanit", sans-serif;
+}
+
+#home{
+    background-image:linear-gradient(rgb(233, 129, 129),rgb(105, 162, 241));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+    
+}
+#container{
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  
+}
+#WeatherApp{
+    margin-bottom: 50px;
+}
+#searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey;
+    border-radius: 5vh;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+}
+#searchbar input{
+    border: none;
+}
+#searchbar input:focus {
+    border: none;
+    outline: none;
+}
+#searchbar img{
+    width: 15px;
+    height: 15px;
+    padding: 2.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+#searchbar button{
+    border: none;
+    background-color:white;
+}
