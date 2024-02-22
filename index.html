@@ -13,10 +13,18 @@
                 <h2>WeatherApp</h2>
             </div>
             <div id="searchbar">
-                <input type="text" required placeholder="ENTER THE LOCATION">
-                 <button type="button" onclick=""><img src="search-interface-symbol.png" alt=""></button>
+                <input type="text" id="locationInput" required placeholder="ENTER THE LOCATION">
+                 <button type="button" onclick="handleit()" ><img src="search-interface-symbol.png" alt=""></button>
+                <div id="suggestions-container"></div>
+            </div>
+            <div id="currentweather">
+                <p>Temperature: <span id="temperaturePlaceholder">--</span></p>
+            </div>
+            <div id="timeweather">
+    
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

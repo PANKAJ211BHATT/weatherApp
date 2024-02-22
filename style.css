@@ -7,7 +7,7 @@
 }
 
 #home{
-    background-image:linear-gradient(rgb(233, 129, 129),rgb(105, 162, 241));
+    background-image:linear-gradient(rgb(102, 67, 240),rgb(239, 118, 194));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,8 @@
     
 }
 #container{
-  border: 3px solid black;
+    background-image:linear-gradient(rgb(146, 104, 237),rgb(138, 98, 208));
+    box-shadow: -2px 4px 8px 4px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 10px;
   text-align: center;
