@@ -24,13 +24,27 @@ let locationinput = '';
                 .then(tempdata => {
                     const temperatureinkelvin = tempdata.main.temp;
                     const temperatureincel = temperatureinkelvin-273.15;
-                    updateTemperature(temperatureincel);
+
+                    const descriptionmain =tempdata.weather[0].main;
+                    const description =tempdata.weather[0].description;
+                    updateTemperature(temperatureincel,descriptionmain,description);
                 })
                 .catch(error => console.error('Error:', error));
         }
 
-        function updateTemperature(temperature) {
+        function updateTemperature(temperature,descriptionmain,description) {
             const temperaturePlaceholder = document.getElementById('temperaturePlaceholder');
+            const descriptionmainPlaceholder =document.getElementById('descriptionmain');
+            const descriptionplaceholder =document.getElementById('description');
+
+            container.style.height = "400px";
+            container.style.width = "400px";
+
+            descriptionmainPlaceholder.textContent=`${descriptionmain}`
+
+            descriptionplaceholder.textContent=`${description}`
+
             temperaturePlaceholder.textContent = `${temperature.toFixed(2)} °C`;
+            container.classList.add('transition-effect');
         }
     }

@@ -29,16 +29,22 @@
 }
 #searchbar{
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
     border: 2px solid grey;
     border-radius: 5vh;
     padding: 10px;
     background-color: rgb(255, 255, 255);
     margin-bottom: 50px;
+    width: 375px;
+    height: 15px;
+    position:relative;
+    gap: 3px;
 }
 #searchbar input{
     border: none;
+    background-color: transparent;
+    width: 100%;
 }
 #searchbar input:focus {
     border: none;
@@ -47,14 +53,27 @@
 #searchbar img{
     width: 15px;
     height: 15px;
-    padding: 2.5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    
+    cursor: pointer; 
+    position: absolute;
+    right: 15px;
+    top: 11px;
 }
 #searchbar button{
     border: none;
     background-color:white;
 }
+#currentweather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+#temperaturePlaceholder{
+    font-size: 60px;
+    font-weight: 800;
+}
+
