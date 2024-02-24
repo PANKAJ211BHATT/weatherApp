@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="home">
-        <div id="container">
-            <div id="WeatherApp">
-                <h2>WeatherApp</h2>
-            </div>
-            <div id="searchbar">
-                <input type="text" id="locationInput" required placeholder="ENTER THE LOCATION">
-                 <button type="button" onclick="handleit()" ><img src="search-interface-symbol.png" alt=""></button>
-                <div id="suggestions-container"></div>
-            </div>
-            <div id="currentweather">
-                <p><span id="temperaturePlaceholder"></span></p>
-                <div id="descriptiondiv">
-                    <p><span id="descriptionmain"></span></p>
-                    <p><span id="description"></span></p>
-                </div>
-            </div>
-            <div id="timeweather">
-    
-            </div>
+      <div id="container">
+        <div id="WeatherApp">
+          <h2>WeatherApp</h2>
         </div>
+        <div id="searchbar">
+          <input
+            type="text"
+            id="locationInput"
+            required
+            placeholder="ENTER THE LOCATION"
+          />
+          <button type="button" onclick="handleit()">
+            <img src="search-interface-symbol.png" alt="" />
+          </button>
+          <div id="suggestions-container"></div>
+        </div>
+        <div id="currentweather">
+          <p><span id="temperaturePlaceholder"></span></p>
+          <div id="descriptiondiv">
+            <p><span id="descriptionmain"></span></p>
+            <p><span id="description"></span></p>
+          </div>
+        </div>
+        <div id="timeweather">
+          <div id="timeforecast-container"></div>
+        </div>
+        
+                
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
