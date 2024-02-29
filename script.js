@@ -129,7 +129,8 @@ function updateCurrentTime(curtim){
   const ate= new Date(curtim)
   document.getElementById("datehai").innerHTML=ate.toLocaleTimeString('en-US');
   document.getElementById("pnak").innerHTML=ate.toLocaleDateString();
-  setInterval(realtime(),1000)
+
+  setInterval(realtime,100);
 }
 
 }
